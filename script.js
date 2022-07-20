@@ -131,19 +131,10 @@ open.addEventListener("click", () => {
     navbar.classList.toggle("white")
 })
 
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1.5,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
-
 var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
-    slidesPerView: 2,
+    slidesPerView: 1,
+    spaceBetween: 100,
     centeredSlides: true,
     paginationClickable: true,
     loop: false,
