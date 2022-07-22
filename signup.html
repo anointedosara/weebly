@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <div class="top-error">
+        <div>
+            <p></p>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
     <nav class="navbar">
         <img src="https://cdn2.editmysite.com/images/landing-pages/global/logo.svg" alt="">
     </nav>
@@ -27,22 +33,22 @@
                 <div class="form-items">
                     <div class="wrap">
                         First name<br>
-                        <div class="input-wrapper">
-                            <input type="text" id="firstname" placeholder="First name">
-                            <i class="fa-solid fa-triangle-exclamation first-icon"></i>
+                        <div class="input-wrapper firstName-wrapper">
+                            <input type="text" id="firstname" placeholder="First name" name="firstName" oninput="handleChange(this)">
+                            <i class="fa-solid fa-triangle-exclamation firstName-icon"></i>
                         </div>
-                        <div class="error first-error">
+                        <div class="error firstName-error">
                             <div></div>
                             <p></p>
                         </div>
                     </div>
                     <div class="wrap">
                         Last name<br>
-                        <div class="input-wrapper">
-                            <input type="text" id="lastname" placeholder="Last name">
-                            <i class="fa-solid fa-triangle-exclamation last-icon"></i>
+                        <div class="input-wrapper lastName-wrapper">
+                            <input type="text" id="lastname" placeholder="Last name" name="lastName" oninput="handleChange(this)">
+                            <i class="fa-solid fa-triangle-exclamation lastName-icon"></i>
                         </div>
-                        <div class="error last-error">
+                        <div class="error lastName-error">
                             <div></div>
                             <p></p>
                         </div>
@@ -51,22 +57,22 @@
                 <div class="form-items">
                     <div class="wrap">
                         Enter your email<br>
-                        <div class="input-wrapper">
-                            <input type="email" id="email" placeholder="you@example.com">
-                            <i class="fa-solid fa-triangle-exclamation icon"></i>
+                        <div class="input-wrapper email-wrapper">
+                            <input type="email" id="email" placeholder="you@example.com" name="email" oninput="handleChange(this)">
+                            <i class="fa-solid fa-triangle-exclamation email-icon"></i>
                         </div>
-                        <div class="error">
+                        <div class="error email-error">
                             <div></div>
                             <p></p>
                         </div>
                     </div>
                     <div class="wrap">
                         Confirm your email<br>
-                        <div class="input-wrapper">
-                            <input type="email" id="confirm-email" placeholder="you@example.com">
-                            <i class="fa-solid fa-triangle-exclamation icon"></i>
+                        <div class="input-wrapper confirmEmail-wrapper">
+                            <input type="email" id="confirm-email" placeholder="you@example.com" name="confirmEmail" oninput="handleChange(this)">
+                            <i class="fa-solid fa-triangle-exclamation confirmEmail-icon"></i>
                         </div>
-                        <div class="error">
+                        <div class="error confirmEmail-error">
                             <div></div>
                             <p></p>
                         </div>
@@ -75,20 +81,21 @@
                 <div class="form-items">
                     <div class="wrap">
                         Create a password<br>
-                        <div class="input-wrapper">
-                            <input type="password" id="password" placeholder="password">
-                            <i class="fa-solid fa-triangle-exclamation icon"></i>
+                        <div class="input-wrapper password-wrapper">
+                            <input type="password" id="password" placeholder="password" name="password" oninput="handleChange(this)">
+                            <i class="fa-solid fa-triangle-exclamation password-icon"></i>
                             <p>show</p>
                         </div>
-                        <div class="error">
+                        <div class="error password-error">
                             <div></div>
                             <p></p>
                         </div>
                     </div>
                     <div>
                         Locale<br>
-                        <select id="location">
+                        <select id="location" name="location" onselect="handleChange(this)">
                         <option disabled>Please select...</option>
+                        <option>Nigeria</option>
                         <option>Nigeria</option>
                         <option>Nigeria</option>
                         <option>Nigeria</option>
@@ -162,7 +169,7 @@
 
             <div class="form-footer">
                 <div class="footer1">
-                    <div class="check">
+                    <div class="check" name="agree" oninput="handleChange(this)">
                         <div class="check-div"><i class="fa-solid fa-check"></i></div>
                         <p>I agree to Weebly’s <a href="#">Terms</a> and <a href="#">Privacy Policy.</a> By continuing, you agree to the <a href="#">Seller Agreement</a> and <a href="#">Privacy Policy</a>.</p>
                     </div>
@@ -177,6 +184,8 @@
             </div>
         </form>
     </div>
+
+
 
     <script src="signup.js"></script>
 </body>

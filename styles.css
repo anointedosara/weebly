@@ -1758,7 +1758,7 @@ html::-webkit-scrollbar-thumb {
         margin-right: 16px !important;
     }
     .swiper-container-border-bottom {
-        max-width: 279.9px !important;
+        max-width: 280px !important;
         width: 100%;
     }
 }
