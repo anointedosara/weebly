@@ -17,6 +17,7 @@ select.addEventListener("click", () => {
 let optionP = document.querySelectorAll(".option p")
 let lang = document.querySelector(".lang")
 
+
 for (let i = 0; i < optionP.length; i++) {
     optionP[i].addEventListener("click", () => {
         setTimeout(() => {
