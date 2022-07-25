@@ -20,7 +20,7 @@ const Rotate = document.getElementsByClassName("rotate")
 const Dropping = document.querySelector(".dropping")
 
 const Hamburger = document.querySelector(".hamburger")
-const Info = document.querySelector(".navIfo")
+const Info = document.querySelector(".navInfo")
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 1) {
@@ -87,13 +87,16 @@ Dropping.addEventListener("click", () => {
     Dropping.classList.toggle("height")
 })
 
-Hamburger.addEventListener('click', () => {
+Hamburger.addEventListener("click", () => {
     Info.classList.toggle("left")
+    navBar.style.backgroundColor = "white"
     window.addEventListener("scroll", () => {
         if (window.scrollY < 1) {
-            navBar.classList.add("navbg")
-        } else {
             navBar.classList.remove("navbg")
+            dropDown.classList.add("point")
+        } else {
+            navBar.classList.add("navbg")
+            dropDown.classList.add("point")
         }
     })
 })

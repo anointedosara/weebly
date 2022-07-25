@@ -106,6 +106,11 @@ body {
     cursor: pointer;
 }
 
+.btn a {
+    text-decoration: none;
+    color: rgb(170, 165, 165);
+}
+
 .btn:hover {
     background-color: rgb(241, 237, 237);
 }
@@ -167,6 +172,11 @@ nav ul li a {
     outline: none;
     font-size: 18px;
     font-weight: 500;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #3374FF;
 }
 
 #head {
@@ -1355,9 +1365,10 @@ nav ul li a {
     .proper {
         position: absolute;
         width: 100%;
+        height: 100px;
         display: flex;
         height: auto;
-        bottom: 0%;
+        top: 500px;
         justify-content: center;
         align-items: center;
     }
@@ -1372,6 +1383,7 @@ nav ul li a {
         outline: none;
         font-size: 18px;
         font-weight: 500;
+        margin-bottom: 100px;
     }
     
     .sharper {
@@ -1386,6 +1398,11 @@ nav ul li a {
         font-size: 18px;
         font-weight: 500;
         position: absolute;
+    }
+
+    .sharper a {
+        text-decoration: none;
+        color: #3374FF;
     }
     
     #head {
@@ -2179,9 +2196,10 @@ nav ul li a {
     .proper {
         position: absolute;
         width: 100%;
+        height: 100px;
         display: flex;
         height: auto;
-        bottom: 0%;
+        top: 500px;
         justify-content: center;
         align-items: center;
     }
@@ -2196,6 +2214,7 @@ nav ul li a {
         outline: none;
         font-size: 18px;
         font-weight: 500;
+        margin-bottom: 100px;
     }
     
     .sharper {
@@ -2210,6 +2229,11 @@ nav ul li a {
         font-size: 18px;
         font-weight: 500;
         position: absolute;
+    }
+
+    .sharper a {
+        text-decoration: none;
+        color: #3374FF;
     }
     
     #head {
