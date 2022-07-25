@@ -619,6 +619,11 @@ html::-webkit-scrollbar-thumb {
     object-fit: cover !important;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .section3-small-image {
     max-width: 995px;
     width: 100%;

@@ -9,6 +9,41 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+.top-error {
+    background: red;
+    color: white;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    height: 73px;
+    width: 100%;
+    transition: 0.5s all ease;
+}
+
+.top {
+    top: 0;
+}
+
+.top-error div {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.top-error div p {
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.top-error div i {
+    font-size: 28px;
+}
+
 .navbar {
     width: 100%;
     display: flex;
