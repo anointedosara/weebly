@@ -621,6 +621,7 @@ html::-webkit-scrollbar-thumb {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .section3-small-image {
